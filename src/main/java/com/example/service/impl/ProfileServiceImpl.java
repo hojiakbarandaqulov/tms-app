@@ -1,9 +1,9 @@
-package com.example.service;
+package com.example.service.impl;
 
 import com.example.exp.AppBadException;
 import com.example.model.Profile;
 import com.example.repository.ProfileRepository;
-import com.example.service.impl.ProfileService;
+import com.example.service.service.ProfileService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

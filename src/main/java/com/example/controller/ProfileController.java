@@ -2,7 +2,7 @@ package com.example.controller;
 
 import com.example.dto.ApiResponse;
 import com.example.dto.auth.UpdatePasswordDTO;
-import com.example.service.impl.AuthService;
+import com.example.service.service.AuthService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.PutMapping;
@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RequiredArgsConstructor
 @RestController
-@RequestMapping("profile/")
+@RequestMapping("profile")
 public class ProfileController {
     private final AuthService authService;
 

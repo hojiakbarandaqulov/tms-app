@@ -1,0 +1,39 @@
+###
+POST http://localhost:8080/api/company
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJob2ppYWtiYXJhbmRhcXVsb3ZAZ21haWwuY29tIiwicm9sZXMiOiJST0xFX0FETUlOIiwiaWQiOiIxIiwiaWF0IjoxNzU5MTM5NDkwLCJleHAiOjE3NTk0ODUwOTB9.K41u5fFsaSVN8mlcCmZqWk4gl5_BlW5NlmdZOl70g8ciHBTmforspDRC6dv5zz8BgxkWdItESwr21YeV3nRsZA
+
+{
+  "name": "Brain IT Company",
+  "address": "Toshkent Shaxar"
+}
+
+
+###
+PUT http://localhost:8080/api/company/2
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJob2ppYWtiYXJhbmRhcXVsb3ZAZ21haWwuY29tIiwicm9sZXMiOiJST0xFX0FETUlOIiwiaWQiOiIxIiwiaWF0IjoxNzU5MTM5NDkwLCJleHAiOjE3NTk0ODUwOTB9.K41u5fFsaSVN8mlcCmZqWk4gl5_BlW5NlmdZOl70g8ciHBTmforspDRC6dv5zz8BgxkWdItESwr21YeV3nRsZA
+
+
+{
+  "name": "NewMax",
+  "address": "Toshkent Shaxar"
+}
+
+###
+GET http://localhost:8080/api/company/2
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJob2ppYWtiYXJhbmRhcXVsb3ZAZ21haWwuY29tIiwicm9sZXMiOiJST0xFX0FETUlOIiwiaWQiOiIxIiwiaWF0IjoxNzU5MTM5NDkwLCJleHAiOjE3NTk0ODUwOTB9.K41u5fFsaSVN8mlcCmZqWk4gl5_BlW5NlmdZOl70g8ciHBTmforspDRC6dv5zz8BgxkWdItESwr21YeV3nRsZA
+
+
+###
+GET http://localhost:8080/api/company
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJob2ppYWtiYXJhbmRhcXVsb3ZAZ21haWwuY29tIiwicm9sZXMiOiJST0xFX0FETUlOIiwiaWQiOiIxIiwiaWF0IjoxNzU5MTM5NDkwLCJleHAiOjE3NTk0ODUwOTB9.K41u5fFsaSVN8mlcCmZqWk4gl5_BlW5NlmdZOl70g8ciHBTmforspDRC6dv5zz8BgxkWdItESwr21YeV3nRsZA
+
+###
+DELETE http://localhost:8080/api/company/2
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJob2ppYWtiYXJhbmRhcXVsb3ZAZ21haWwuY29tIiwicm9sZXMiOiJST0xFX0FETUlOIiwiaWQiOiIxIiwiaWF0IjoxNzU5MTM5NDkwLCJleHAiOjE3NTk0ODUwOTB9.K41u5fFsaSVN8mlcCmZqWk4gl5_BlW5NlmdZOl70g8ciHBTmforspDRC6dv5zz8BgxkWdItESwr21YeV3nRsZA
+
+
+
+
+

@@ -18,16 +18,17 @@ import java.util.Optional;
 
 @NoRepositoryBean
 public interface BaseRepository<T extends BaseEntity> extends JpaRepository<T, Long>, JpaSpecificationExecutor<T> {
-  /*  Optional<T> findByIdAndDeletedFalse(Long id);
-    Optional<T> deleted(Long id);
+    Optional<T> findByIdAndDeletedFalse(Long id);
+//    Optional<T> deleted(Long id);
 
 
     List<T> findAllByDeletedFalse();
     Page<T> findAllByDeletedFalse(Pageable pageable);
-    List<Optional<T>> deletedList(List<Long> ids);
+
+//    List<Optional<T>> deletedList(List<Long> ids);
 
 
-    @Modifying
+   /* @Modifying
     @Query("UPDATE #{#entityName} e SET e.deleted = true WHERE e.id = :id")
     void softDeleteById(@Param("id") ID id);
 
