@@ -1,0 +1,43 @@
+###
+POST http://localhost:8080/drivers
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJob2ppYWtiYXJhbmRhcXVsb3ZAZ21haWwuY29tIiwicm9sZXMiOiJST0xFX0FETUlOIiwiaWQiOiIxIiwiaWF0IjoxNzU5MTM5NDkwLCJleHAiOjE3NTk0ODUwOTB9.K41u5fFsaSVN8mlcCmZqWk4gl5_BlW5NlmdZOl70g8ciHBTmforspDRC6dv5zz8BgxkWdItESwr21YeV3nRsZA
+
+{
+  "fullName": "Jasur Ismoilov",
+  "licenseNumber": "AB1234568",
+  "phone": "+998901234568",
+  "companyId": 2
+}
+
+
+###
+GET http://localhost:8080/drivers/1
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJob2ppYWtiYXJhbmRhcXVsb3ZAZ21haWwuY29tIiwicm9sZXMiOiJST0xFX0FETUlOIiwiaWQiOiIxIiwiaWF0IjoxNzU5MTM5NDkwLCJleHAiOjE3NTk0ODUwOTB9.K41u5fFsaSVN8mlcCmZqWk4gl5_BlW5NlmdZOl70g8ciHBTmforspDRC6dv5zz8BgxkWdItESwr21YeV3nRsZA
+
+
+###
+GET http://localhost:8080/drivers
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJob2ppYWtiYXJhbmRhcXVsb3ZAZ21haWwuY29tIiwicm9sZXMiOiJST0xFX0FETUlOIiwiaWQiOiIxIiwiaWF0IjoxNzU5MTM5NDkwLCJleHAiOjE3NTk0ODUwOTB9.K41u5fFsaSVN8mlcCmZqWk4gl5_BlW5NlmdZOl70g8ciHBTmforspDRC6dv5zz8BgxkWdItESwr21YeV3nRsZA
+
+
+###
+PUT http://localhost:8080/drivers/update
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJob2ppYWtiYXJhbmRhcXVsb3ZAZ21haWwuY29tIiwicm9sZXMiOiJST0xFX0FETUlOIiwiaWQiOiIxIiwiaWF0IjoxNzU5MTM5NDkwLCJleHAiOjE3NTk0ODUwOTB9.K41u5fFsaSVN8mlcCmZqWk4gl5_BlW5NlmdZOl70g8ciHBTmforspDRC6dv5zz8BgxkWdItESwr21YeV3nRsZA
+
+{
+  "id": 4,
+  "fullName": "Jasur Ismoilov",
+  "licenseNumber": "AB1234569",
+  "phone": "+998901234569",
+  "companyId": 2
+}
+
+###
+DELETE http://localhost:8080/drivers/4
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJob2ppYWtiYXJhbmRhcXVsb3ZAZ21haWwuY29tIiwicm9sZXMiOiJST0xFX0FETUlOIiwiaWQiOiIxIiwiaWF0IjoxNzU5MTM5NDkwLCJleHAiOjE3NTk0ODUwOTB9.K41u5fFsaSVN8mlcCmZqWk4gl5_BlW5NlmdZOl70g8ciHBTmforspDRC6dv5zz8BgxkWdItESwr21YeV3nRsZA
+
+###
+GET http://localhost:8080/drivers/company/2
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJob2ppYWtiYXJhbmRhcXVsb3ZAZ21haWwuY29tIiwicm9sZXMiOiJST0xFX0FETUlOIiwiaWQiOiIxIiwiaWF0IjoxNzU5MTM5NDkwLCJleHAiOjE3NTk0ODUwOTB9.K41u5fFsaSVN8mlcCmZqWk4gl5_BlW5NlmdZOl70g8ciHBTmforspDRC6dv5zz8BgxkWdItESwr21YeV3nRsZA

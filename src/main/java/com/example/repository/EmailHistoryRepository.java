@@ -9,7 +9,7 @@ import org.springframework.data.jpa.repository.Query;
 import java.time.LocalDateTime;
 import java.util.Optional;
 
-public interface EmailHistoryRepository extends JpaRepository<EmailHistory, String> {
+public interface EmailHistoryRepository extends BaseRepository<EmailHistory> {
     Long countByEmailAndCreatedDateBetween(String email, LocalDateTime from, LocalDateTime to);
 
     @Query(value = "select * from email_history where email=?1 order by created_date=desc limit 1", nativeQuery = true)

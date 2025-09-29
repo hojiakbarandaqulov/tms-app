@@ -5,11 +5,9 @@ import com.example.dto.ApiResponse;
 import com.example.dto.auth.LoginDTO;
 import com.example.dto.auth.RegistrationDTO;
 import com.example.dto.auth.ResetPasswordDTO;
-import com.example.dto.auth.UpdatePasswordDTO;
-import com.example.service.AuthServiceImpl;
-import com.example.service.impl.AuthService;
+import com.example.service.impl.AuthServiceImpl;
+import com.example.service.service.AuthService;
 import jakarta.validation.Valid;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -25,7 +23,6 @@ public class AuthController {
     public ApiResponse<?> registration(@Valid @RequestBody RegistrationDTO dto) {
         return authService.registration(dto);
     }
-
 
     @PostMapping(value = "login")
     public ApiResponse<?> login(@Valid @RequestBody LoginDTO dto) {

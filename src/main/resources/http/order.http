@@ -1,0 +1,56 @@
+###
+POST http://localhost:8080/orders
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJob2ppYWtiYXJhbmRhcXVsb3ZAZ21haWwuY29tIiwicm9sZXMiOiJST0xFX0FETUlOIiwiaWQiOiIxIiwiaWF0IjoxNzU5MTM5NDkwLCJleHAiOjE3NTk0ODUwOTB9.K41u5fFsaSVN8mlcCmZqWk4gl5_BlW5NlmdZOl70g8ciHBTmforspDRC6dv5zz8BgxkWdItESwr21YeV3nRsZA
+
+
+{
+  "shipperId": 1,
+  "carrierId": 1,
+  "vehicleId": 2,
+  "origin": "dsfdf",
+  "destination": "sdfds",
+  "status": "PENDING"
+}
+
+###
+GET http://localhost:8080/orders/1
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJob2ppYWtiYXJhbmRhcXVsb3ZAZ21haWwuY29tIiwicm9sZXMiOiJST0xFX0FETUlOIiwiaWQiOiIxIiwiaWF0IjoxNzU5MTM5NDkwLCJleHAiOjE3NTk0ODUwOTB9.K41u5fFsaSVN8mlcCmZqWk4gl5_BlW5NlmdZOl70g8ciHBTmforspDRC6dv5zz8BgxkWdItESwr21YeV3nRsZA
+
+
+###
+GET http://localhost:8080/orders
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJob2ppYWtiYXJhbmRhcXVsb3ZAZ21haWwuY29tIiwicm9sZXMiOiJST0xFX0FETUlOIiwiaWQiOiIxIiwiaWF0IjoxNzU5MTM5NDkwLCJleHAiOjE3NTk0ODUwOTB9.K41u5fFsaSVN8mlcCmZqWk4gl5_BlW5NlmdZOl70g8ciHBTmforspDRC6dv5zz8BgxkWdItESwr21YeV3nRsZA
+
+
+###
+PUT http://localhost:8080/orders/2
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJob2ppYWtiYXJhbmRhcXVsb3ZAZ21haWwuY29tIiwicm9sZXMiOiJST0xFX0FETUlOIiwiaWQiOiIxIiwiaWF0IjoxNzU5MTM5NDkwLCJleHAiOjE3NTk0ODUwOTB9.K41u5fFsaSVN8mlcCmZqWk4gl5_BlW5NlmdZOl70g8ciHBTmforspDRC6dv5zz8BgxkWdItESwr21YeV3nRsZA
+
+{
+  "shipperId": 1,
+  "carrierId": 1,
+  "vehicleId": 2,
+  "origin": "dsfdf",
+  "destination": "sdfds",
+  "status": "PENDING"
+}
+
+
+
+###
+DELETE http://localhost:8080/orders/2
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJob2ppYWtiYXJhbmRhcXVsb3ZAZ21haWwuY29tIiwicm9sZXMiOiJST0xFX0FETUlOIiwiaWQiOiIxIiwiaWF0IjoxNzU5MTM5NDkwLCJleHAiOjE3NTk0ODUwOTB9.K41u5fFsaSVN8mlcCmZqWk4gl5_BlW5NlmdZOl70g8ciHBTmforspDRC6dv5zz8BgxkWdItESwr21YeV3nRsZA
+
+
+###
+PUT http://localhost:8080/orders/1/assign-driver?
+    vehicleId=2
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJob2ppYWtiYXJhbmRhcXVsb3ZAZ21haWwuY29tIiwicm9sZXMiOiJST0xFX0FETUlOIiwiaWQiOiIxIiwiaWF0IjoxNzU5MTM5NDkwLCJleHAiOjE3NTk0ODUwOTB9.K41u5fFsaSVN8mlcCmZqWk4gl5_BlW5NlmdZOl70g8ciHBTmforspDRC6dv5zz8BgxkWdItESwr21YeV3nRsZA
+
+
+###
+PUT http://localhost:8080/orders/1/status?
+    status=COMPLETED
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJob2ppYWtiYXJhbmRhcXVsb3ZAZ21haWwuY29tIiwicm9sZXMiOiJST0xFX0FETUlOIiwiaWQiOiIxIiwiaWF0IjoxNzU5MTM5NDkwLCJleHAiOjE3NTk0ODUwOTB9.K41u5fFsaSVN8mlcCmZqWk4gl5_BlW5NlmdZOl70g8ciHBTmforspDRC6dv5zz8BgxkWdItESwr21YeV3nRsZA

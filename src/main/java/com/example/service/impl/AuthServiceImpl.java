@@ -1,6 +1,5 @@
-package com.example.service;
+package com.example.service.impl;
 
-import com.example.config.SpringConfig;
 import com.example.dto.ApiResponse;
 import com.example.dto.auth.*;
 import com.example.enums.GeneralStatus;
@@ -8,18 +7,17 @@ import com.example.enums.RoleEnum;
 import com.example.exp.AppBadException;
 import com.example.model.Profile;
 import com.example.repository.ProfileRepository;
-import com.example.service.impl.AuthService;
-import com.example.service.impl.ProfileService;
+import com.example.service.EmailSendingService;
+import com.example.service.service.AuthService;
+import com.example.service.service.ProfileService;
 import com.example.util.EmailUtil;
 import com.example.util.JwtUtil;
-import com.example.util.SpringSecurityUtil;
 import io.jsonwebtoken.JwtException;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.Optional;
 
@@ -60,7 +58,7 @@ public class AuthServiceImpl implements AuthService {
     public ApiResponse<?> login(LoginDTO dto) {
         Optional<Profile> loginProfile = profileRepository.findByEmailAndDeletedTrue(dto.getEmail());
         if (loginProfile.isEmpty()) {
-            throw new AppBadException("profile password wrong");
+            throw new AppBadException("profile not found");
         }
         Profile entity = loginProfile.get();
         if (!bCryptPasswordEncoder.matches(dto.getPassword(), entity.getPassword())) {
